@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Top menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1e3a5f;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Intro */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #e8f0fa;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #1e3a5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+.section {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.gray {
+  background-color: #f2f2f2;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Boxes for skills and projects */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1e3a5f;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
