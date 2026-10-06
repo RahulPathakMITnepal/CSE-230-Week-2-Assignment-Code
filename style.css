@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -70,6 +74,26 @@ body {
   margin: 10px auto;
 }
 
+/* About: image and text side by side */
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-row img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-row p {
+  text-align: left;
+  margin: 0;
+}
+
 /* Boxes for skills and projects */
 .row {
   display: flex;
@@ -96,4 +120,78 @@ body {
 
 .footer p {
   margin: 0;
+}
+
+/* ---------- Tablet (900px and smaller) ---------- */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-row p {
+    text-align: center;
+  }
+
+  /* two boxes in each line */
+  .box {
+    width: 45%;
+  }
+}
+
+/* ---------- Mobile (600px and smaller) ---------- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .links a {
+    margin-left: 0;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 30px 15px;
+  }
+
+  .about-row img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* one box in each line */
+  .box {
+    width: 100%;
+  }
 }
